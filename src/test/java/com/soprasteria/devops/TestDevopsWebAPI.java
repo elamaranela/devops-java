@@ -44,7 +44,7 @@ public class TestDevopsWebAPI {
 	@Test
 	public void checkDetails() throws Exception {
 
-		RequestBuilder requestBuilder = MockMvcRequestBuilders.get("/hello-world1").accept(MediaType.APPLICATION_JSON);
+		RequestBuilder requestBuilder = MockMvcRequestBuilders.get("/hello-world").accept(MediaType.APPLICATION_JSON);
 		MvcResult result = mockMvc.perform(requestBuilder).andReturn();
 
 		System.out.println("response:::::: " + result.getResponse());
